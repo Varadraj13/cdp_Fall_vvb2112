@@ -11,18 +11,34 @@
     <header class="site-header">
         <nav class="site-nav" aria-label="Primary">
             <a class="brand" href="#entry">Explore, Explain, Propose</a>
-            <div class="nav-links">
-                <a href="#entry">Entry</a>
-                <a href="#problem">Problem</a>
-                <a href="#proposal">Proposal</a>
-                <a href="#framework">Framework</a>
-                <a href="#methods">Methods</a>
-                <a href="#prototype">Prototype</a>
-                <a href="#precedents">Precedents</a>
-                <a href="#audience">Audience</a>
-                <a href="#trajectory">Trajectory</a>
-                <a href="#deliverables">Deliverables</a>
-                <a href="#closing">Closing</a>
+            <button
+                class="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="menu-panel"
+            >
+                <span class="menu-icon" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <div id="menu-panel" class="menu-panel" hidden>
+                <div class="menu-links" role="menu" aria-label="Section navigation">
+                    <a role="menuitem" href="#entry">Introduction</a>
+                    <a role="menuitem" href="#problem">Problem</a>
+                    <a role="menuitem" href="#proposal">Proposal</a>
+                    <a role="menuitem" href="#framework">Framework</a>
+                    <a role="menuitem" href="#methods">Methods</a>
+                    <a role="menuitem" href="#prototype">Prototype</a>
+                    <a role="menuitem" href="#precedents">Precedents</a>
+                    <a role="menuitem" href="#audience">Audience</a>
+                    <a role="menuitem" href="#trajectory">Trajectory</a>
+                    <a role="menuitem" href="#deliverables">Deliverables</a>
+                    <a role="menuitem" href="#closing">Closing</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -30,16 +46,13 @@
     <main class="content">
         <h1 class="sr-only">Explore, Explain, Propose</h1>
 
-        <section id="entry" class="section">
-            <h2>Entry</h2>
-            <p>
-                This project explores how the rhythms of living systems can become computational interaction logic—so “flat” software can unfold into space and behavior.
-            </p>
-            <figure class="figure figure-grid">
-                <img src="Assets/01.png" alt="Title slide" decoding="async" loading="eager">
-                <img src="Assets/02.png" alt="Opening quote and thesis framing" decoding="async" loading="lazy">
-                <figcaption>Title + thesis framing.</figcaption>
-            </figure>
+        <section id="entry" class="section section--intro">
+            <h2 class="sr-only">Introduction</h2>
+            <div class="frames">
+                <figure class="frame">
+                    <img src="Assets/02.png" alt="Opening quote / thesis framing" decoding="async" loading="lazy">
+                </figure>
+            </div>
         </section>
 
         <section id="problem" class="section">
@@ -47,10 +60,12 @@
             <p>
                 Many interfaces treat behavior as static states. I’m interested in interfaces that respond like living systems: sensing change, stabilizing through feedback, and expressing rhythm.
             </p>
-            <figure class="figure">
-                <img src="Assets/04.png" alt="Biological behaviors referenced for interaction logic" decoding="async" loading="lazy">
-                <figcaption>Biological behaviors as a starting point for interaction primitives.</figcaption>
-            </figure>
+            <div class="frames">
+                <figure class="frame">
+                    <img src="Assets/04.png" alt="Biological behaviors referenced for interaction logic" decoding="async" loading="lazy">
+                    <figcaption>Biological behaviors as a starting point for interaction primitives.</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section id="proposal" class="section">
@@ -58,11 +73,15 @@
             <p>
                 Translate behavioral primitives into a spatial interaction system for everyday contexts—using banking/financial signals as a concrete frame for urgency, stability, and change.
             </p>
-            <figure class="figure figure-grid">
-                <img src="Assets/07.png" alt="UX translation to banking behaviors" decoding="async" loading="lazy">
-                <img src="Assets/09.png" alt="Behavioral logic translated into ambient spatial modulation" decoding="async" loading="lazy">
-                <figcaption>From behavioral states to UX and spatial interaction.</figcaption>
-            </figure>
+            <div class="frames">
+                <figure class="frame">
+                    <img src="Assets/07.png" alt="UX translation to banking behaviors" decoding="async" loading="lazy">
+                </figure>
+                <figure class="frame">
+                    <img src="Assets/09.png" alt="Behavioral logic translated into ambient spatial modulation" decoding="async" loading="lazy">
+                    <figcaption>From behavioral states to UX and spatial interaction.</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section id="framework" class="section">
@@ -70,10 +89,12 @@
             <p>
                 A biocybernetic lens: feedback, coupling, and self-organization. The goal is not to “animate data,” but to make data behave in interpretable, functional ways.
             </p>
-            <figure class="figure">
-                <img src="Assets/03.png" alt="Keywords and precedents list" decoding="async" loading="lazy">
-                <figcaption>Keywords + reference works informing the approach.</figcaption>
-            </figure>
+            <div class="frames">
+                <figure class="frame">
+                    <img src="Assets/03.png" alt="Keywords and precedents list" decoding="async" loading="lazy">
+                    <figcaption>Keywords + reference works informing the approach.</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section id="methods" class="section">
@@ -81,11 +102,15 @@
             <p>
                 Start from observable biological behaviors, then formalize them into computational rules (attraction, repulsion, alignment, local awareness, relevance) that can be tuned and tested.
             </p>
-            <figure class="figure figure-grid">
-                <img src="Assets/04.png" alt="Biological behaviors: bats, bees, coral systems" decoding="async" loading="lazy">
-                <img src="Assets/05.png" alt="Translating biological behavior into computational logic" decoding="async" loading="lazy">
-                <figcaption>Borrowed behaviors → computational logic.</figcaption>
-            </figure>
+            <div class="frames">
+                <figure class="frame">
+                    <img src="Assets/04.png" alt="Biological behaviors: bats, bees, coral systems" decoding="async" loading="lazy">
+                </figure>
+                <figure class="frame">
+                    <img src="Assets/05.png" alt="Translating biological behavior into computational logic" decoding="async" loading="lazy">
+                    <figcaption>Borrowed behaviors → computational logic.</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section id="prototype" class="section">
@@ -93,12 +118,15 @@
             <p>
                 A parameterized simulation that expresses distinct interaction “states,” plus a sensing pipeline that can translate environmental signals into real-time modulation.
             </p>
-            <figure class="figure figure-grid">
-                <img src="Assets/06.png" alt="Visual parameter states and interaction primitives" decoding="async" loading="lazy">
-                <img src="Assets/08.png" alt="Feedback phase state table with example visual outcomes" decoding="async" loading="lazy">
-                <img src="Assets/10.png" alt="System architecture: sensor fusion toward spatial interaction" decoding="async" loading="lazy">
-                <figcaption>State definitions + system architecture.</figcaption>
-            </figure>
+            <div class="frames">
+                <figure class="frame">
+                    <img src="Assets/06.png" alt="Visual parameter states and interaction primitives" decoding="async" loading="lazy">
+                </figure>
+                <figure class="frame">
+                    <img src="Assets/10.png" alt="System architecture: sensor fusion toward spatial interaction" decoding="async" loading="lazy">
+                    <figcaption>State definitions + system architecture.</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section id="precedents" class="section">
@@ -113,10 +141,12 @@
                 <li>MIT Responsive Environments</li>
                 <li>Uexküll / Bateson / von Foerster — cybernetic feedback + Umwelt</li>
             </ul>
-            <figure class="figure">
-                <img src="Assets/03.png" alt="Precedents list (slide detail)" decoding="async" loading="lazy">
-                <figcaption>Selected precedents and references.</figcaption>
-            </figure>
+            <div class="frames">
+                <figure class="frame">
+                    <img src="Assets/03.png" alt="Precedents list (slide detail)" decoding="async" loading="lazy">
+                    <figcaption>Selected precedents and references.</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section id="audience" class="section">
@@ -124,10 +154,12 @@
             <p>
                 For interaction designers, HCI researchers, and spatial computing builders exploring ambient, legible feedback loops. Also relevant to financial UX teams interested in conveying risk, stability, and attention without dashboards.
             </p>
-            <figure class="figure">
-                <img src="Assets/07.png" alt="Supporting context: translating system states into everyday financial behaviors" decoding="async" loading="lazy">
-                <figcaption>One possible application frame: financial behavior signals.</figcaption>
-            </figure>
+            <div class="frames">
+                <figure class="frame">
+                    <img src="Assets/07.png" alt="Supporting context: translating system states into everyday financial behaviors" decoding="async" loading="lazy">
+                    <figcaption>One possible application frame: financial behavior signals.</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section id="trajectory" class="section">
@@ -135,10 +167,12 @@
             <p>
                 Next steps move from simulation toward interaction studies: analog experiments, refinement of the behavior engine, and a mixed-reality spatial interface prototype.
             </p>
-            <figure class="figure">
-                <img src="Assets/11.png" alt="Roadmap ahead: trajectory and next steps" decoding="async" loading="lazy">
-                <figcaption>Roadmap ahead.</figcaption>
-            </figure>
+            <div class="frames">
+                <figure class="frame">
+                    <img src="Assets/11.png" alt="Roadmap ahead: trajectory and next steps" decoding="async" loading="lazy">
+                    <figcaption>Roadmap ahead.</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section id="deliverables" class="section">
@@ -152,10 +186,12 @@
                 <li><a href="vvb2112_Final%20assignment.pdf">Final assignment (PDF)</a></li>
             </ul>
 
-            <figure class="figure">
-                <img src="Assets/14.png" data-fallback="Assets/12.png" alt="References snapshot / bibliography" decoding="async" loading="lazy">
-                <figcaption>References snapshot (falls back to `Assets/12.png` if `Assets/14.png` isn’t present yet).</figcaption>
-            </figure>
+            <div class="frames">
+                <figure class="frame">
+                    <img src="Assets/14.png" data-fallback="Assets/12.png" alt="References snapshot / bibliography" decoding="async" loading="lazy">
+                    <figcaption>References snapshot (falls back to `Assets/12.png` if `Assets/14.png` isn’t present yet).</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section id="closing" class="section">
@@ -163,10 +199,12 @@
             <p>
                 Open questions to guide iteration: clarity of translation, strongest behaviors to push further, and where to focus next (simulation, analog tests, or MR prototype).
             </p>
-            <figure class="figure">
-                <img src="Assets/15.png" data-fallback="Assets/13.png" alt="Open questions slide" decoding="async" loading="lazy">
-                <figcaption>Questions (falls back to `Assets/13.png` if `Assets/15.png` isn’t present yet).</figcaption>
-            </figure>
+            <div class="frames">
+                <figure class="frame">
+                    <img src="Assets/15.png" data-fallback="Assets/13.png" alt="Open questions slide" decoding="async" loading="lazy">
+                    <figcaption>Questions (falls back to `Assets/13.png` if `Assets/15.png` isn’t present yet).</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 

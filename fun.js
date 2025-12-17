@@ -16,5 +16,46 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const menuButton = document.querySelector(".menu-button");
+  const menuPanel = document.querySelector("#menu-panel");
+
+  if (menuButton && menuPanel) {
+    const closeMenu = () => {
+      menuPanel.hidden = true;
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation menu");
+    };
+
+    const openMenu = () => {
+      menuPanel.hidden = false;
+      menuButton.setAttribute("aria-expanded", "true");
+      menuButton.setAttribute("aria-label", "Close navigation menu");
+    };
+
+    const toggleMenu = () => {
+      if (menuPanel.hidden) openMenu();
+      else closeMenu();
+    };
+
+    menuButton.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggleMenu();
+    });
+
+    menuPanel.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const target = e.target;
+      if (target && target.tagName === "A") closeMenu();
+    });
+
+    document.addEventListener("click", () => {
+      if (!menuPanel.hidden) closeMenu();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !menuPanel.hidden) closeMenu();
+    });
+  }
 });
 
